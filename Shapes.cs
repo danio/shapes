@@ -10,8 +10,8 @@ namespace shapes
     {
         static void Main(string[] args)
         {
-            Widget w = new Widget();
-            w.Print();
+            Square s = new Square();
+            s.Print();
         }
     }
 }

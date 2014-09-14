@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    interface IWidget
+    class Square : IWidget
     {
-        void Print();
+        public void Print()
+        {
+            Console.WriteLine("Square");
+        }
     }
 }
