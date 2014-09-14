@@ -7,7 +7,7 @@ namespace shapes
     class Drawing
     {
         IList<IWidget> _widgets;
-        internal static readonly string _rule = "----------------------------------------------------------------" + Environment.NewLine;
+        const string _rule = "----------------------------------------------------------------";
 
         public Drawing()
         {
@@ -23,16 +23,14 @@ namespace shapes
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.Append(_rule);
-            sb.Append("Current Drawing");
-            sb.Append(Environment.NewLine);
-            sb.Append(_rule);
+            sb.AppendLine(_rule);
+            sb.AppendLine("Current Drawing");
+            sb.AppendLine(_rule);
             foreach (var widget in _widgets)
             {
-                sb.Append(widget);
-                sb.Append(Environment.NewLine);
+                sb.AppendLine(widget.ToString());
             }
-            sb.Append(_rule);
+            sb.AppendLine(_rule);
             return sb.ToString();
         }
     }
