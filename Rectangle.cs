@@ -21,8 +21,6 @@ namespace shapes
         public Rectangle(Vector location, int width, int height)
             : this(location, new Vector(width, height))
         {
-            _location = new Vector(location);
-            _size = new Vector(width, height);
         }
 
         // convenience constructor interface can be used if preferred
