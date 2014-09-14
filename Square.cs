@@ -25,7 +25,7 @@ namespace shapes
 
         public override string ToString()
         {
-            return string.Format("Square {0} size={1}", _location, _size);
+            return string.Format("{0} {1} size={2}", this.GetType().Name, _location, _size);
         }
     }
 }

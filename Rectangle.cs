@@ -33,7 +33,7 @@ namespace shapes
 
         public override string ToString()
         {
-            return string.Format("Rectangle {0} width={1} height={2}", _location, _size.X, _size.Y);
+            return string.Format("{0} {1} width={2} height={3}", GetType().Name, _location, _size.X, _size.Y);
         }
     }
 }
