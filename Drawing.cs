@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-//using System.Linq;
+using System.Text;
 
 namespace shapes
 {
@@ -21,11 +21,19 @@ namespace shapes
 
         public override string ToString()
         {
-            string s = _rule + "Current Drawing" + Environment.NewLine + _rule;
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(_rule);
+            sb.Append("Current Drawing");
+            sb.Append(Environment.NewLine);
+            sb.Append(_rule);
             foreach (var widget in _widgets)
-                s = s + widget.ToString() + Environment.NewLine;
-            s = s + _rule;
-            return s;
+            {
+                sb.Append(widget);
+                sb.Append(Environment.NewLine);
+            }
+            sb.Append(_rule);
+            return sb.ToString();
         }
     }
 }
