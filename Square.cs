@@ -11,10 +11,15 @@ namespace shapes
         int _size;
         Vector _location;
 
-        public Square(int x, int y, int size)
+        public Square(Vector location, int size)
         {
-            _location = new Vector(x, y);
+            _location = new Vector(location);
             _size = size;
+        }
+
+        // convenience constructor interface can be used if preferred
+        public Square(int x, int y, int size) : this(new Vector(x, y), size)
+        {
         }
 
         public override string ToString()

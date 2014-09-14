@@ -19,6 +19,12 @@ namespace shapes
             _y = y;
         }
 
+        public Vector(Vector v)
+        {
+            _x = v._x;
+            _y = v._y;
+        }
+
         public override string ToString()
         {
             return String.Format("({0},{1})", _x, _y);
