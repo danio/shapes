@@ -10,8 +10,11 @@ namespace shapes
     {
         static void Main(string[] args)
         {
-            Square s = new Square(15, 30, 35);
-            s.Print();
+            Drawing drawing = new Drawing();
+
+            drawing.Add(new Square(15, 30, 35));
+
+            Console.WriteLine(drawing);
         }
     }
 }

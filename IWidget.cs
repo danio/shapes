@@ -8,6 +8,5 @@ namespace shapes
 {
     interface IWidget
     {
-        void Print();
     }
 }

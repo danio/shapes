@@ -17,9 +17,9 @@ namespace shapes
             _size = size;
         }
 
-        public void Print()
+        public override string ToString()
         {
-            Console.WriteLine("Square {0} size={1}", _location, _size);
+            return string.Format("Square {0} size={1}", _location, _size);
         }
     }
 }
