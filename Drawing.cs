@@ -9,6 +9,7 @@ namespace shapes
     class Drawing
     {
         IList<IWidget> _widgets;
+        const string _rule = "----------------------------------------------------------------\n";
 
         public Drawing()
         {
@@ -22,10 +23,10 @@ namespace shapes
 
         public override string ToString()
         {
-            string s = "----------------------------------------------------------------\nCurrent Drawing\n----------------------------------------------------------------\n";
+            string s = _rule + "Current Drawing\n" + _rule;
             foreach (var widget in _widgets)
                 s = s + widget.ToString() + "\n";
-            s = s + "----------------------------------------------------------------\n";
+            s = s + _rule;
             return s;
         }
     }
