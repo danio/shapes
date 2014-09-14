@@ -7,7 +7,7 @@ namespace ShapeTest
 {
     // More of an integration test than a unit test, but usign unit test framework as it's easy to manage
     [TestClass]
-    public class TestFullOutput
+    public class FullOutputTest
     {
         [TestMethod]
         public void TestSampleFromSpec()
