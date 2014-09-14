@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    class Shapes
+    class Widget
     {
-        static void Main(string[] args)
+        public void Print()
         {
-            Widget w = new Widget();
-            w.Print();
+            Console.WriteLine("{0}, {1}, {2}",
+                "Widget",
+                "c#",
+                "app");
         }
     }
 }
