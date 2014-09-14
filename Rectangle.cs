@@ -2,7 +2,7 @@
 
 namespace shapes
 {
-    class Rectangle : IWidget
+    public class Rectangle : IWidget
     {
         Vector _location;
         Vector _size; // width and height stored as a vector for easier manipulation/calculation

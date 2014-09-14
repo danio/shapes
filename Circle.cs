@@ -2,7 +2,7 @@
 
 namespace shapes
 {
-    class Circle : IWidget
+    public class Circle : IWidget
     {
         Vector _location;
         int _diameter;

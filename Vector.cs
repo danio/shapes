@@ -4,7 +4,7 @@ namespace shapes
 {
     // General type that represents a two-dimensional vector
     // e.g. a point, location
-    class Vector
+    public class Vector
     {
         int _x;
         int _y;

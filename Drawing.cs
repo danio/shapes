@@ -4,7 +4,7 @@ using System.Text;
 
 namespace shapes
 {
-    class Drawing
+    public class Drawing
     {
         IList<IWidget> _widgets;
         const string _rule = "----------------------------------------------------------------";

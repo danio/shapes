@@ -2,7 +2,7 @@
 
 namespace shapes
 {
-    class Ellipse : IWidget
+    public class Ellipse : IWidget
     {
         Vector _location;
         Vector _size; // horizontal and vertical diameter stored as a vector for easier manipulation/calculation

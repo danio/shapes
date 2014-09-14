@@ -2,7 +2,7 @@
 
 namespace shapes
 {
-    class Textbox : IWidget
+    public class Textbox : IWidget
     {
         Vector _location;
         Vector _size; // width and height stored as a vector for easier manipulation/calculation

@@ -2,7 +2,7 @@
 
 namespace shapes
 {
-    class Square : IWidget
+    public class Square : IWidget
     {
         Vector _location;
         int _size;

@@ -1,6 +1,6 @@
 ﻿namespace shapes
 {
-    interface IWidget
+    public interface IWidget
     {
     }
 }
