@@ -12,9 +12,9 @@ namespace shapes
         {
             Drawing drawing = new Drawing();
 
-            drawing.Add(new Rectangle(new Vector(10, 10), 30, 40));
-            drawing.Add(new Square(new Vector(15, 30), 35));
-            drawing.Add(new Ellipse(new Vector(100, 150), 300, 200));
+            drawing.Add(new Rectangle(location: new Vector(10, 10), width: 30, height: 40));
+            drawing.Add(new Square(location: new Vector(15, 30), size: 35));
+            drawing.Add(new Ellipse(location: new Vector(100, 150), diameterH: 300, diameterV: 200));
 
             Console.WriteLine(drawing);
         }
