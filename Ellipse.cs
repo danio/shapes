@@ -27,7 +27,7 @@ namespace shapes
 
         public override string ToString()
         {
-            return string.Format("{0} {1} diameterH={2} diameterV={3}", GetType().Name, _location, _size.X, _size.Y);
+            return string.Format("{0} {1} diameterH = {2} diameterV = {3}", GetType().Name, _location, _size.X, _size.Y);
         }
     }
 }
