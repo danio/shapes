@@ -8,9 +8,16 @@ namespace shapes
 {
     class Square : IWidget
     {
+        private int _size;
+
+        public Square(int size)
+        {
+            _size = size;
+        }
+
         public void Print()
         {
-            Console.WriteLine("Square");
+            Console.WriteLine("Square size={0}", _size);
         }
     }
 }

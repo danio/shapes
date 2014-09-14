@@ -10,7 +10,7 @@ namespace shapes
     {
         static void Main(string[] args)
         {
-            Square s = new Square();
+            Square s = new Square(35);
             s.Print();
         }
     }
