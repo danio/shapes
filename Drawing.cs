@@ -22,9 +22,10 @@ namespace shapes
 
         public override string ToString()
         {
-            string s = "Drawing";
+            string s = "----------------------------------------------------------------\nCurrent Drawing\n----------------------------------------------------------------\n";
             foreach (var widget in _widgets)
-                s = s + widget.ToString();
+                s = s + widget.ToString() + "\n";
+            s = s + "----------------------------------------------------------------\n";
             return s;
         }
     }
