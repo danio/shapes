@@ -12,6 +12,7 @@ namespace shapes
         {
             Drawing drawing = new Drawing();
 
+            drawing.Add(new Rectangle(new Vector(10, 10), 30, 40));
             drawing.Add(new Square(new Vector(15, 30), 35));
 
             Console.WriteLine(drawing);

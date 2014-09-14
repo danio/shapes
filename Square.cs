@@ -8,8 +8,8 @@ namespace shapes
 {
     class Square : IWidget
     {
-        int _size;
         Vector _location;
+        int _size;
 
         public Square(Vector location, int size)
         {
@@ -18,7 +18,8 @@ namespace shapes
         }
 
         // convenience constructor interface can be used if preferred
-        public Square(int x, int y, int size) : this(new Vector(x, y), size)
+        public Square(int x, int y, int size)
+            : this(new Vector(x, y), size)
         {
         }
 
